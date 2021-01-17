@@ -12,4 +12,4 @@ def f1(x):
     return x**2-1
 
 def f2(x):
-    return 2**x-1
+    return 2**x-1 
