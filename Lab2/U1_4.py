@@ -20,4 +20,4 @@ def tvarsumman2(n):
     while n!=0:
         tvarsumma += n%10
         n = n//10
-    return tvarsumma
+    return tvarsumma 

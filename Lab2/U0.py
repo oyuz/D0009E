@@ -1,5 +1,5 @@
-import Uppgift1_4
-import Uppgift5
+import U1_4
+import U5
 
 def menu():
     while True:
@@ -14,15 +14,15 @@ def menu():
 
         if inp==1:
             n = int(input("Enter parameter: "))
-            Uppgift1_4.bounce(n)
+            U1_4.bounce(n)
 
         elif inp==2:
             n = int(input("Enter parameter: "))
-            print(Uppgift1_4.tvarsumman(n))
+            print(U1_4.tvarsumman(n))
 
         elif inp==3:
             x = int(input("Enter x: "))
-            print(Uppgift5.solve(Uppgift5.f1, x, 0.0001))
+            print(U5.solve(U5.f1, x, 0.0001))
 
         elif inp==4:
             return
