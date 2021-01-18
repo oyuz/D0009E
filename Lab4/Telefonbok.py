@@ -37,6 +37,7 @@ class Telefonbok:
     def add(self, name, number):
         if name in self.dic:
             print(name, "already exists")
+            return
         if self.number_available(number):
             self.dic[name] = Number(number)
     
@@ -53,6 +54,9 @@ class Telefonbok:
             self.dic[alias] = self.dic[name]
 
     def change(self, name, number):
+        if name not in self.dic:
+            print(name, "not found")
+            return
         if self.number_available(number):
             self.dic[name].setNumber(number)
 
@@ -70,6 +74,7 @@ class Telefonbok:
         f.close()
 
     def load(self, file):
+        self.dic.clear()
         f = open(file, 'r')
         for line in f:
             contact = line.split(";")
