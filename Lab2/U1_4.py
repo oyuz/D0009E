@@ -14,7 +14,7 @@ def bounce2(n):
 def tvarsumman(n):
     if n//10==0:
         return n
-    return n%10 + tvarsumman(n//10)
+    return n%10 + tvarsumman(n//10) 
 
 def tvarsumman2(n):
     tvarsumma=0
