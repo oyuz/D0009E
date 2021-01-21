@@ -12,14 +12,15 @@ class DictionaryUI:
         
         if inp==1:
             dictionary=List_dictionary.ListDictionary()
+            self.menu(dictionary)
             
         elif inp==2:
             dictionary=Tuple_dictionary.TupleDictionary()
+            self.menu(dictionary)
             
         elif inp==3:
             dictionary=Dictionary.Dictionary()
-            
-        self.menu(dictionary)
+            self.menu(dictionary)
             
         else:
             raise Exception("Invalid input")
