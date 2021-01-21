@@ -11,16 +11,15 @@ class DictionaryUI:
         inp=int(input("Choose alternative: "))
         
         if inp==1:
-            listDictionary=List_dictionary.ListDictionary()
-            self.menu(listDictionary)
+            dictionary=List_dictionary.ListDictionary()
             
         elif inp==2:
-            tupleDictionary=Tuple_dictionary.TupleDictionary()
-            self.menu(tupleDictionary)
+            dictionary=Tuple_dictionary.TupleDictionary()
             
         elif inp==3:
             dictionary=Dictionary.Dictionary()
-            self.menu(dictionary)
+            
+        self.menu(dictionary)
             
         else:
             raise Exception("Invalid input")
