@@ -10,6 +10,5 @@ class ListDictionary:
     def lookup(self, word):
         for i in range(len(self.words)):
             if self.words[i]==word:
-                print("Description for", word, ":", self.descs[i])
-                return
+                return self.descs[i]
         raise NameError

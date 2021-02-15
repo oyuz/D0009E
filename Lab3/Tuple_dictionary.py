@@ -8,6 +8,5 @@ class TupleDictionary:
     def lookup(self, word):
         for tup in self.dic:
             if tup[0]==word:
-                print("Description for", word, ":", tup[1])
-                return
+                return tup[1]
         raise NameError

@@ -11,12 +11,12 @@ class DictionaryUI:
         inp=int(input("Choose alternative: "))
         
         if inp==1:
-            dictionary=List_dictionary.ListDictionary()
-            self.menu(dictionary)
+            listDictionary=List_dictionary.ListDictionary()
+            self.menu(listDictionary)
             
         elif inp==2:
-            dictionary=Tuple_dictionary.TupleDictionary()
-            self.menu(dictionary)
+            tupleDictionary=Tuple_dictionary.TupleDictionary()
+            self.menu(tupleDictionary)
             
         elif inp==3:
             dictionary=Dictionary.Dictionary()
@@ -42,7 +42,8 @@ class DictionaryUI:
             elif inp==2:
                 word = input("Word to lookup: ")
                 try:
-                    dictionary.lookup(word)
+                    desc = dictionary.lookup(word)
+                    print("Description for", word, ":", desc)
                 except NameError:
                     print(word, "cannot be found in the dictionary")
 

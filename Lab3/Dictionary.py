@@ -10,4 +10,4 @@ class Dictionary:
         if desc == None:
             raise NameError
         else:
-            print("Description for", word, ":", desc)
+            return desc
