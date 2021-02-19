@@ -4,6 +4,8 @@ class ListDictionary:
         self.descs=[]
 
     def insert(self, word, desc):
+        if word in self.words:
+            raise NameError
         self.words.append(word)
         self.descs.append(desc)
     

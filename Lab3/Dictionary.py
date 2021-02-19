@@ -3,6 +3,8 @@ class Dictionary:
         self.dic={}
 
     def insert(self, word, desc):
+        if word in self.dic:
+            raise NameError
         self.dic[word]=desc
 
     def lookup(self, word):

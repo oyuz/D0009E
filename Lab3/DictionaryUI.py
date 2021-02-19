@@ -37,7 +37,10 @@ class DictionaryUI:
             if inp==1:
                 word = input("Word to insert: ")
                 desc = input("Description of word: ")
-                dictionary.insert(word, desc)
+                try:
+                    dictionary.insert(word, desc)
+                except NameError:
+                    print(word, "is already in the dictionary")
 
             elif inp==2:
                 word = input("Word to lookup: ")

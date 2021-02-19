@@ -3,6 +3,9 @@ class TupleDictionary:
         self.dic=[]
 
     def insert(self, word, desc):
+        for tup in self.dic:
+            if tup[0]==word:
+                raise NameError
         self.dic.append((word,desc))
 
     def lookup(self, word):
